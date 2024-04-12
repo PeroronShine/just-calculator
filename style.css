@@ -1,3 +1,10 @@
+body {
+  background-image: url(mathematical-formulas-drawn-by-hand-on-a-white-chalkboard-for-the-background.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  font-family: Tahoma;
+}
+
 .body {
   width: 350px;
   border-top: 2px solid #C1C1C1;
@@ -9,103 +16,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 5px 20px;
-  background: #D7CCC8;
+  background-color: #D7CCC8;
   border-radius: 10px;
-  font-family: Tahoma;
   box-shadow: -7px 7px 10px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
 }
-.results {
-  width: 92%;
-  margin: 20px auto;
-  text-align: right; 
-}
 
-#expression, #result {
-  border-radius: 4px;
-  border-top: 2px solid #616161;
-  border-right: 2px solid #616161;
-  border-bottom: 2px solid #040303;
-  border-left: 2px solid #040303;
-  background-color: #71877d;
-  padding-right: 5px;
-  
-}
-
-#result {
-  height: 50px;
-  font-size: 2em;
-  border-bottom: none;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: inset -2px 2px 3px #030303, inset -25px 25px 0px rgba(75, 75, 75, 0.2);
-}
-
-#expression {
-  height: 20px;
-  border-top: none;
-  color: #263238;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  overflow: hidden;
-  box-shadow: inset -2px -2px 3px #030303,inset -25px 0px 0px rgba(75, 75, 75, 0.2);
-}
-
-.numbers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.operations, .clears {
-  display: flex;
-  flex-direction: column;
-}
-.operations * {
-  font-size: 1.5em;
-}
-
-.clears * {
-  background: #EF5350;
-  color: white;
-}
-
-button {
-  border: none;
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  text-align: center;
-  outline: none;
-
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #181818;
-  border-left: 2px solid #181818;
-  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px rgba(75, 75, 75, 0.4);
-}
-
-button:active {
-  transform: translateY(2px);
-  box-shadow: 0px 0px 2px #030303, inset 0px 20px 1px rgba(75, 75, 75, 0.4)
-}
-
-.number, .operation, .equals {
-  background: #263238;
-  color: white;
-}
-
-//ccs for quotes
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
 }
-
 .mySlides {
   display: none;
   padding: 80px;
   text-align: center;
 }
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -119,40 +43,86 @@ button:active {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
-
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: #ddd;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 q {font-style: italic;}
 .author {color: cornflowerblue;}
+
+.results {
+  width: 92%;
+  margin: 20px auto;
+  text-align: right; 
+}
+#expression, #result {
+  border-radius: 4px;
+  border-top: 2px solid #616161;
+  border-right: 2px solid #616161;
+  border-bottom: 2px solid #040303;
+  border-left: 2px solid #040303;
+  background-color: #71877d;
+  padding-right: 5px;
+}
+#result {
+  height: 50px;
+  font-size: 2em;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: inset -2px 2px 3px #030303, inset -25px 25px 0px rgba(75, 75, 75, 0.2);
+}
+#expression {
+  height: 20px;
+  border-top: none;
+  color: #263238;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  overflow: hidden;
+  box-shadow: inset -2px -2px 3px #030303,inset -25px 0px 0px rgba(75, 75, 75, 0.2);
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.operations, .clears {
+  display: flex;
+  flex-direction: column;
+}
+.operations * {
+  font-size: 1.5em;
+}
+.clears * {
+  background: #EF5350;
+  color: white;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  border-top: 2px solid #C1C1C1;
+  border-right: 2px solid #C1C1C1;
+  border-bottom: 2px solid #181818;
+  border-left: 2px solid #181818;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px rgba(75, 75, 75, 0.2);
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 2px #030303, inset 0px 20px 1px rgba(75, 75, 75, 0.2)
+}
+.number, .operation, .equals {
+  background: #263238;
+  color: white;
+}
 
 
 
