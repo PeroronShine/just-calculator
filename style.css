@@ -4,7 +4,6 @@ body {
   background-attachment: fixed;
   font-family: Tahoma;
 }
-
 .body {
   width: 350px;
   border-top: 2px solid #C1C1C1;
@@ -20,7 +19,6 @@ body {
   border-radius: 10px;
   box-shadow: -7px 7px 10px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
 }
-
 .slideshow-container {
   height: 150px;
   position: relative;
@@ -92,14 +90,12 @@ q {font-style: italic;}
   display: grid;
   grid-template-columns: repeat(3, 3fr);
 }
-.operations, .clears {
+.operations, .operations2 {
   display: flex;
   flex-direction: column;
 }
-.operations * {
-  font-size: 1.7em;
-}
-.clears * {
+#clear, #ce{
+  font-size: 1.4em;
   background: #EF5350;
   color: white;
 }
@@ -118,9 +114,6 @@ button {
   border-left: 2px solid #181818;
   box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px rgba(75, 75, 75, 0.2);
 }
-#+ {
-  height: 80px;
-}
 button:active {
   transform: translateY(2px);
   box-shadow: 0px 0px 2px #030303, inset 0px 20px 1px rgba(75, 75, 75, 0.2)
@@ -129,6 +122,3 @@ button:active {
   background: #263238;
   color: white;
 }
-
-
-
